@@ -1,6 +1,6 @@
 ---
 title: Team Oceania CTF Qualifiers 2025 Writeups
-date: 2025-01-14
+date: 2025-02-14
 description: Writeups for Team Oceania CTF Qualifiers 2025
 tags: 
     - ctf
@@ -33,9 +33,9 @@ Since I was born in 1999, I am elligible to qualify, so I attempted to try my be
 
 I have written writeups for the following web challenges:
 
-- [manic](#manic-180)
-- [beans (WIP)]()
-- [login (WIP)]()
+- [manic (180)](#manic-180)
+- [beans (230)](#beans-230)
+- [login (235)](#login-235)
 
 ## manic (180)
 
@@ -499,6 +499,10 @@ The reason why I couldn't solve this challenge was due to my methodology when en
 
 Another thing I wanted to explore is how the `man` binary is finding the files to read and to see if I could create other CTF challenges with exploit chains utilising the `man` binary. You can find the blog for my `man` journey [here (WIP)]().
 
-## beans
+## beans (230)
 
-## login
+WIP
+
+## login (235)
+
+WIP
