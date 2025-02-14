@@ -4,7 +4,7 @@ description: A little intro about me!
 slug: hello-world
 date: 2025-01-17
 image: cover.jpg
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+# weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
 # Hello 👋

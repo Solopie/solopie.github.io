@@ -1,13 +1,15 @@
 ---
 title: Team Oceania CTF Qualifiers 2025 Writeups
 date: 2025-02-14
-description: Writeups for Team Oceania CTF Qualifiers 2025
+description: Walkthrough the web challenge category with me created by the legendary hashkitten
 tags: 
     - ctf
     - web 
     - hashkitten_rulz
 categories:
     - ctf-writeups
+image: oceania_logo_wide.png
+# weight: 1
 ---
 
 ## Background
