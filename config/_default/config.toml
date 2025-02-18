@@ -1,7 +1,7 @@
 # Change baseurl before deploy
 baseurl = "https://www.solopie.com"
 languageCode = "en-us"
-title = "Solopie's Website"
+title = "Solopie"
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
